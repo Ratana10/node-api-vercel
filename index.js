@@ -15,5 +15,8 @@ app.get('/about', (req, res) => {
   res.send('This is my about route..... ')
 })
 
+ app.get('/api', (req, res) => {
+        res.json({ message: 'Hello from Express on Vercel!' });
+    });
 // Export the Express API
 module.exports = app
